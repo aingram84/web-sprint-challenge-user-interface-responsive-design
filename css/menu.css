@@ -85,7 +85,9 @@ h4 {
 p, a {
     font-size: 3rem;
 }
-
+* {
+    color: white;
+}
 /* header section */
 header {
     width: 100%;
@@ -94,6 +96,36 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+.hdBox {
+    background-color: rgb(0, 4, 17, .8);
+    width: 100%;
+    display: flex;
+    /* border: 2px solid red; */
+    flex-direction: column;
+    padding: 1%;
+}
+.navLinks {
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* border: 2px solid yellow; */
+  margin: 0 auto;
+  padding: 1%;
+}
+.hdText {
+    justify-content: center;
+    display: flex;
+}
+.socBox{
+    width: 25%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    margin: 0 auto;
+    /* border: 2px solid green; */
 }
 
 /* spacer */
@@ -118,7 +150,37 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
 }
+.menu-container {
+        width: 100%;
+        /* display: flex; */
+}
+.menu-section {
+    width: 100%;
+    display: flex;
+}
+.menu-item {
+    width: 100%;
+    /* display: flex; */
+}
+.menuT {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+.menuL {
+    width: 45%
+}
+.menuR {
+    width: 45%
+}
+.menuB {
+    width: 100%;
+    justify-content: center;
+}
+
+
 
 /* footer section */
 footer {

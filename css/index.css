@@ -56,6 +56,8 @@ html {
     min-width: 428px;
     width: 100%;
     font-size: 62.5%;
+    color: white;
+    background-color: rgb(0, 4, 17);
 }
 
 body {
@@ -92,6 +94,54 @@ header {
     background-position: center;
     background-repeat: no-repeat;
 }
+h1 {
+    font-size: 7.2rem;
+}
+h2 {
+    font-size: 4.8rem;
+    justify-content: center;
+    display: flex;
+}
+* {
+    max-width: 100%;
+}
+
+.hdBox {
+    background-color: rgb(0, 4, 17, .8);
+    width: 100%;
+    display: flex;
+    /* border: 2px solid red; */
+    flex-direction: column;
+    padding: 1%;
+}
+.navLinks {
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* border: 2px solid yellow; */
+  margin: 0 auto;
+  padding: 1%;
+}
+.hdText {
+    justify-content: center;
+    display: flex;
+}
+.socBox{
+    width: 25%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    margin: 0 auto;
+    /* border: 2px solid green; */
+}
+/* .socImg {
+    scale: 300%;
+} */
+a {
+    color: white;
+}
 
 /* spacers */
 .spacer {
@@ -111,6 +161,24 @@ header {
     height: 100vh;
     text-align: center;
     background-color: rgb(0, 4, 17);
+    flex-direction: column;
+    
+}
+.galBox
+{
+    display: inline-flex;
+    padding-left: 5px;
+    padding-right: 5px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.galImg {
+    flex-basis: 26%;
+    padding: 20px;
+}
+.galText {
+    padding-top: 30px;
 }
 
 /* about us section */
@@ -194,8 +262,49 @@ footer {
     height: 15vh;
     padding-top: 2.5vh;
     font-size: 3rem;
+    flex-direction: row;
+    display: flex;
 }
+.mailBox {
+    width: 25%;
+    display: flex;
+    /* border: 2px solid blue; */
+    font-size: 2.4rem;
+    justify-content: center;
+    
+}
+.mailText {
+    text-align: center;
+    /* border: 2px solid palevioletred; */
+}
+.mailButton {
+    width: 90%;
+    /* border: 2px solid turquoise; */
+}
+.mailLabel {
+    text-align: center;
+}
+.crBox {
+    width: 75%;
+    /* border: 2px solid yellow; */
+    display: flex;
+    flex-direction: column;
+}
+.crText {
+    font-size: 1.6rem;
+    /* border: 2px solid red; */
+    text-align: right;
+}
+footer .navLinks {
+    width: 100%;
+    /* border: 2px solid green; */
+}
+footer input[type="text"]{ font-size: 2rem; margin-top: 10px; }
 
+footer #mailButton {
+    width: 10rem;
+    height: 2.8rem;
+}
 /* mobile media query */
 @media (max-width: 428px) {
     /* header section */
@@ -249,5 +358,5 @@ footer {
         height: auto;
         padding-top: 2.5vh;
         font-size: 2rem;
-    }
+}
 }
